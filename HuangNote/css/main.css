@@ -1,0 +1,93 @@
+
+/* The box-sizing property is used to tell the browser content, padding and border, but not the margin (width and height) should include. */
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-sizing;
+}
+
+/* This code apply to body with white background and change font family to "Helvetica". */
+body {
+    background-color: white;
+    font-family: Helvetica, Times, serif; /* using "fallback" font in case certian browser don't support the chosen font.*/
+}
+
+/* This code apply to h1 with color:#FE642E. */
+h1 {
+	color: #FE642E;
+	text-align: center;
+}
+
+h2 {
+	color: white;
+	margin: 10px;
+} 
+
+h3 {
+	color: #FE642E;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* Remove the bullets that show up by default in unordered lists */
+ul {
+	list-style-type: none; 
+}
+
+/* line-height with 44px will be more easy for pad and phone screen when using thumb.*/
+li {
+	font-size: 20px;
+	line-height: 44px; 
+}
+
+/* This code apply to class "lesson" only with color:#A34719 as background; */
+.lesson {
+    background: #A34719;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+/* This code apply to the concept. */
+.concept{
+	background-color: #F5DA81;
+	border-radius: 4px;
+	padding: 4px;
+	margin: 10px;
+}
+
+/* This code apply to the description of concept. */
+.des_concept {
+	font-weight: lighter;
+	margin: 6px;
+}
+
+/* This code apply to the progress of stage. */
+.stage {
+	font-style: italic;
+}
+
+/* Defind boder style on table */
+table, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+/* for span class "foo" */
+span.foo {
+    color: blue;
+    font-weight: bold;
+}
+
+/* Highlight the important sentence */
+span.highlight {
+    color: blue;
+    font-style: italic;
+    font-weight: bold;
+}
+/* demo only */
+div.voo {
+    color: red;
+    font-weight: bold;
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html> <!-- Declare this document type -->
+<html>
+<head> <!--The element contains information of this web page-->
+    <meta charset="utf-8"> <!-- Character encoding -->
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+	<title>Huang's Notes</title> <!-- The element display the name on the browser bar -->
+</head>
+
+<body> <!-- The element contains all other text, markup and elements to show on the web page. -->    
+	<div class="TOC">
+        <h1>Table of Contents</h1>
+        <ol>
+            <li><a href="#lession-1">Lession 1:  The Basic of the Web and HTML</a>
+                <ul>
+                    <li><a href="#lession-1-1">Tags learned in Lession 1</a></li>
+                    <li><a href="#lession-1-2">WWW</a></li>
+                    <li><a href="#lession-1-3">HTML</a></li>
+                    <li><a href="#lession-1-4">Inline VS Block elements</a></li>
+                    <li><a href="#lession-1-5">Viod Tag</a></li>
+                </ul>
+            </li>
+            <li><a href="#lession-2">Lession 2: Creating a Structured Document with HTML</a>
+                <ul>
+                    <li><a href="#lession-2-1">Boxifying Design</a></li>
+                    <li><a href="#lession-2-2">Tree Like Structure</a></li>
+                    <li><a href="#lession-2-3">DOM</a></li>
+                </ul>
+            </li>
+            <li><a href="#lession-3">Lession 3: Adding CSS Style to HTML Structure</a>
+                <ul>
+                    <li><a href="#lession-3-1">CSS</a></li>
+                    <li><a href="#lession-3-2">Inheritance</a></li>
+                    <li><a href="#lession-3-3">The Box Model</a></li>
+                    <li><a href="#lession-3-4">Avoiding Repetition</a></li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <h1>Important Concept</h1>
+    <div class="lesson">        
+        <h2 id="lession-1">Lession 1: The Basic of the Web and HTML</h2>
+        <div class="concept"> <!-- Prepare for description of concept section style markup. -->   
+            <h3 id="lession-1-1">Tags Learned in Lession 1</h3>
+            <div class="des_concept"> <!-- Prepare for description of tag section style markup. -->
+                <table> <!-- This a start tag when create a table. -->
+                    <tr> <!-- "tr" tag create a row in the table. -->
+                        <th><b>Tag</b></th>  <!-- "th" tag create a header column in the table. -->
+                        <th><b>Inline or Block</b></th>
+                        <th><b>Tag Example</b></th>
+                        <th><b>Result</b></th>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;b&gt;...&lt;/b&gt;</b></td> <!-- "th" tag create a simple column in the table. -->
+                        <td><b>Inline</b></td>
+                        <td>This is a <b>&lt;b&gt;</b>Bold<b>&lt;/b&gt;</b> tag.</td>
+                        <td>This is a <b>Bold</b> tag.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;em&gt;...&lt;/em&gt;</b></td>
+                        <td><b>Inline</b></td>
+                        <td>This is a <b>&lt;em&gt;</b>Italics<b>&lt;/em&gt;</b> tag.</td>
+                        <td>This is a <em>Italics</em> tag.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;a href="url"&gt;...&lt;/a&gt;</b></td>
+                        <td><b>Inline</b></td>
+                        <td>This is an <b>&lt;a href="http://www.w3schools.com/tags/tag_a.asp"&gt;</b>Anchor tag<b>&lt;/a&gt;</b> for hyperlink to other objects.</td>
+                        <td>This is an <a href="http://www.w3schools.com/tags/tag_a.asp">Anchor Tag</a> for hyperlink to other objects.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;p&gt;...&lt;/p&gt;</b></td>
+                        <td><b>Block</b></td>
+                        <td><b>&lt;p&gt;</b>This is some text in a paragraph.<b>&lt;/p&gt;</b></td>
+                        <td><p>This is some text in a paragraph.</p></td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;img src="url or path" alt="text"&gt;</b></td>
+                        <td><b>Inline Block <br> (Void Tag)</b></td>
+                        <td>Is this image cute? <b>&lt;img src=".\image\s-cat.jpg" alt="Cat"&gt;</b></td>
+                        <td>Is this image cute? <img src="http://www.picgifs.com/graphics/c/cute/graphics-cute-084267.jpg" width="100" alt="Cat"></td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;br&gt;</b></td>
+                        <td><b>Inline <br> (Void Tag)</b></td>
+                        <td>This tag can break a line. <b>&lt;br&gt;</b>Like this.</td>
+                        <td>This tag can break a line. <br>Like this.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;span class="foo"&gt;&lt;/span&gt;</b></td>
+                        <td><b>Inline</b></td>
+                        <td>This is an <b>&lt;span class="foo"&gt;</b>Inline Tag<b>&lt;/span&gt;</b> for CSS style markup.</td>
+                        <td>This is an <span class="foo">Inline Tag</span> for CSS style markup.</td>
+                    </tr>
+                    <tr>
+                        <td><b>&lt;div class="voo"&gt;&lt;/div&gt;</b></td>
+                        <td><b>Block</b></td>
+                        <td><b>&lt;div class="voo"&gt;</b>This is an Block Tag for CSS style markup.<b>&lt;/div&gt;</b></td>
+                        <td><div class="voo">This is an Block Tag for CSS style markup.</div></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="concept"> <!-- Prepare for description of concept section style markup. -->	            
+            <h3 id="lession-1-2">WWW</h3>
+            <div class="des_concept">
+                <!-- Use inline style tage "span" to highlight the key word. -->
+                <span class="highlight">World Wide Web</span>, is an information system of interlinked hypertext documents that are accessed via the Internet.
+            </div>
+        </div>
+        <div class="concept"> <!-- Prepare for description of concept section style markup. -->	            
+            <h3 id="lession-1-3">HTML</h3>
+            <div class="des_concept">
+                <span class="highlight">HyperText Markup Language</span>, is a markup language for describing web documents (web pages).<br>
+                HTML documents contain text content which describes <b>"what you see"</b> and markup which describes <b>"how it looks"</b>.
+            </div>
+        </div>
+        <div class="concept"> <!-- Prepare for description of concept section style markup. -->	            
+            <h3 id="lession-1-4">Inline VS Block elements</h3>
+            <div class="des_concept">
+                <span class="highlight">If no invisible box around the content</span>, it is an inline element.<br>
+                <span class="highlight">If invisible box around the content</span>, it is an outline element.
+            </div>
+        </div>
+        <div class="concept"> <!-- Prepare for description of concept section style markup. -->	            
+            <h3 id="lession-1-5">Void Tag</h3>
+            <div class="des_concept">
+                The void tag only have start tag, no end tag required.
+            </div>
+        </div>
+    </div>
+
+    <div class="lesson">
+        <h2 id="lession-2">Lession 2: Creating a Structured Document with HTML</h2>
+        <div class="concept"> <!-- Prepare for description of concept section style markup. -->             
+            <h3 id="lession-2-1">Boxifying Design</h3>
+            <div class="des_concept">
+                All contents in the web page can be looked like box.<br>
+                The contents can be images, text, headers and other elements.
+                we can easily re-arrange things by thinking of all of those elements as being boxes to give the user a different experience. 
+            </div>
+        </div>
+        <div class="concept"> <!-- Prepare for description of concept section style markup. -->             
+            <h3 id="lession-2-2">Tree Like Structure</h3>
+            <div class="des_concept">
+                The web structure is controlled by HTML.<br>
+                The structure of HTML like a tree, elements can have other elements inside of them. 
+            </div>
+        </div>
+        <div class="concept"> <!-- Prepare for description of concept section style markup. -->             
+            <h3 id="lession-2-3">DOM</h3>
+            <div class="des_concept">
+                When programmers talk about the "DOM" (Document Object Model),<br>
+                they are talking about the tree-like structure of a page. 
+            </div>
+        </div>
+    </div>
+    <div class="lesson">
+        <h2 id="lession-3">Lession 3: Adding CSS Style to HTML Structure</h2>
+        <div class="concept"> <!-- Prepare for description of concept section style markup. -->             
+            <h3 id="lession-3-1">CSS</h3>
+            <div class="des_concept">
+                <span class="highlight">Cascading Style Sheets</span><br>
+                CSS is code written to control the "style" of HTML elements.
+            </div>
+        </div>
+        <div class="concept"> <!-- Prepare for description of concept section style markup. -->             
+            <h3 id="lession-3-2">Inheritance</h3>
+            <div class="des_concept">
+                Inheritance is a key feature in CSS, it relies on the ancestor-descendant relationship to operate.<br>
+                <span class="highlight">In general, descendant elements inherit text-related properties, but box-related properties are not inherited. Properties that can be inherited are color, font, letter-spacing, line-height, list-style, text-align, text-indent, text-transform, visibility, white-space and word-spacing. Properties that cannot be inherited are background, border, display, float and clear, height and width, margin, min- and max-height and -width, outline, overflow, padding, position, text-decoration, vertical-align and z-index.</span>
+            </div>
+        </div>
+        <div class="concept"> <!-- Prepare for description of concept section style markup. -->             
+            <h3 id="lession-3-3">The Box Model</h3>
+            <div class="des_concept">
+                Please refer the demo site <a href="http://assignments.udacity-extras.appspot.com/courses/html-css/samples/box-model.html" target="_blank">The Box Model</a>.
+                <!-- anchor tag attribute "target" can open link in new tab instead of replacing current web page. -->
+            </div>
+        </div>
+        <div class="concept"> <!-- Prepare for description of concept section style markup. -->             
+            <h3 id="lession-3-4">Avoiding Repetition</h3>
+            <div class="des_concept">
+                Two reason to avoid repetition. <span class="highlight">Avoiding Errors</span> and <span class="highlight">Consistency</span>.<br>
+                <span class="highlight">Avoiding Errors:</span>When doing things repetily in the HTML, it means that you need to copy and past elements many times in different place. You might miss some charactor or past to wrong place. Worse, when you need to change them.<br>
+                <span class="highlight">Consistency:</span>By assiging same <em>class</em> with CSS style, it can avoid repetition and looks consistency on the style.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

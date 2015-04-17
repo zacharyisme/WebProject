@@ -1,0 +1,18 @@
+h1 {
+	color: #FE642E;
+	text-align: center;
+}
+
+ul {
+	list-style-type: none; /* Remove the bullets that show up by default in unordered lists */
+}
+
+li {
+	font-size: 20px;
+	line-height: 44px; 
+}
+
+.description {
+	font-size: 20px;
+	text-align: center;
+}
