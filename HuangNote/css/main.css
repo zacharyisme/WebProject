@@ -92,3 +92,9 @@ div.voo {
     color: red;
     font-weight: bold;
 }
+
+/* style for expression input */
+span.expression {
+	color: blue;
+	font-weight: bold;
+}
