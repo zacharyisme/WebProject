@@ -143,14 +143,54 @@
         <div class="concept"> <!-- Prepare for description of concept section style markup. -->             
             <h3 id="lession-4-2">Loop</h3>
             <div class="des_concept">
-                
+                while <span class="expression">&lt;testExpression&gt;:</span><br>
+                <span class="expression">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Code&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;if <span class="expression">&lt;BreakTest&gt;:</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break<br>
+                <span class="expression">&nbsp;&nbsp;&nbsp;&nbsp;&lt;More Code&gt;</span><br>
+                <span class="expression">&lt;After While&gt;</span>
+            </div>
+        </div>
+    </div>
+    <div class="lesson">
+        <h2 id="lession-5">Lession 5: Debugging</h2>
+        <div class="concept"> <!-- Prepare for description of concept section style markup. -->             
+            <h3 id="lession-5-1">5 Debugging Strategies</h3>
+            <div class="des_concept">
+                <ol>
+                    <li>Examine error messages when programs crash</li>
+                    The last line of Python Tracebacks will tell you what went wrong. Reading backwards from there will tell you more about where the problem occurred.
+                    <li>Work from example code</li>
+                    If your modified code doesn't work, comment it out and do step-by-step modifications to the example code until it does what you want.
+                    <li>Make sure examples work</li>
+                    Just because you find example code doesn't mean it will work in your system. Check the example code you're using to make sure it behaves the way you expect.
+                    <li>Check (print) intermediate results</li>
+                    When your code doesn't crash, but doesn't behave as expected, add print statements to your program to see where in the code things stop behaving correctly.
+                    <li>Keep and compare old versions</li>
+                    When you have a working version of your code, save it before you add to the code. This will give you something to go back to if you introduce too many new bugs.
+            </div>
+        </div>
+    </div>
+    <div class="lesson">
+        <h2 id="lession-6">Lession 3: Input > Function > Output</h2>
+        <div class="concept"> <!-- Prepare for description of concept section style markup. -->             
+            <h3 id="lession-6-1">What is a function</h3>
+            <div class="des_concept">
+                A function is something that takes input, does something to that input, and then produces output.
             </div>
         </div>
         <div class="concept"> <!-- Prepare for description of concept section style markup. -->             
-            <h3 id="lession-4-3">How do functions help programmers avoid repetition</h3>
+            <h3 id="lession-6-2">What is the difference between making and using a function</h3>
+            <div class="des_concept">
+                Functions are made by starting a line of code with the keyword def and then giving a function name followed by the function parameters in parentheses. These parameters will eventually be replaced by actual values when the function is used (called).
+                To use a function, we write the name of the function followed by the value(s) we want to give it in parentheses.
+            </div>
+        </div>
+        <div class="concept"> <!-- Prepare for description of concept section style markup. -->             
+            <h3 id="lession-6-3">How do functions help programmers avoid repetition</h3>
             <div class="des_concept">
                 Functions are tools that programmers can create and reuse forever! Once you've defined a function once, you never have to define it again.
             </div>
-        </div>
+        </div> 
     </div>
 </body>
