@@ -73,6 +73,8 @@ li {
 table, th, td{
     border: 2px solid black;
     border-collapse: collapse;
+    margin-left: auto; /* "margin-left: auto" and "margin-right: auto" can put table in the center of browser */
+    margin-right: auto;
 }
 
 /* for span class "foo" */
