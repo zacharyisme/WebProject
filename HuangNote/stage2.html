@@ -3,7 +3,7 @@
 <head> <!--The element contains information of this web page-->
     <meta charset="utf-8"> <!-- Character encoding -->
     <meta name="viewpoint" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css">
 	<title>Intro: Automate Your Page</title> <!-- The element display the name on the browser bar -->
 </head>
 <body>
@@ -33,6 +33,23 @@
                     <li><a href="#lession-3-1">What is a function</a></li>
                     <li><a href="#lession-3-2">What is the difference between making and using a function</a></li>
                     <li><a href="#lession-3-3">How do functions help programmers avoid repetition</a></li>
+                </ul>
+            </li>
+            <li><a href="#lession-4">Lession 4: Control Flow and Loops: if and while</a>
+                <ul>
+                    <li><a href="#lession-4-1">Making Decision "if"</a></li>
+                    <li><a href="#lession-4-2">"while" Loop</a></li>
+                </ul>
+            </li>
+            <li><a href="#lession-5">Lession 5: Debugging</a>
+                <ul>
+                    <li><a href="#lession-5-1">5 Debugging Strategies</a></li>
+                </ul>
+            </li>
+            <li><a href="#lession-6">Lession 6: Structure Data: List &amp; For Loops</a>
+                <ul>
+                    <li><a href="#lession-6-1">List Operations Table</a></li>
+                    <li><a href="#lession-6-2">"For" Loop</a></li>
                 </ul>
             </li>
         </ol>
@@ -132,7 +149,7 @@
     <div class="lesson">
         <h2 id="lession-4">Lession 4: Control Flow and Loops: if and while</h2>
         <div class="concept"> <!-- Prepare for description of concept section style markup. -->             
-            <h3 id="lession-4-1">Making Decision</h3>
+            <h3 id="lession-4-1">Making Decision "if"</h3>
             <div class="des_concept">
                 if <span class="expression">&lt;Expression&gt;:</span><br>
                 <span class="expression">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Block&gt;</span><br>
@@ -141,7 +158,7 @@
             </div>
         </div>
         <div class="concept"> <!-- Prepare for description of concept section style markup. -->             
-            <h3 id="lession-4-2">Loop</h3>
+            <h3 id="lession-4-2">"While" Loop</h3>
             <div class="des_concept">
                 while <span class="expression">&lt;testExpression&gt;:</span><br>
                 <span class="expression">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Code&gt;</span><br>
@@ -157,17 +174,18 @@
         <div class="concept"> <!-- Prepare for description of concept section style markup. -->             
             <h3 id="lession-5-1">5 Debugging Strategies</h3>
             <div class="des_concept">
-                <ol>
-                    <li>Examine error messages when programs crash</li>
-                    The last line of Python Tracebacks will tell you what went wrong. Reading backwards from there will tell you more about where the problem occurred.
-                    <li>Work from example code</li>
-                    If your modified code doesn't work, comment it out and do step-by-step modifications to the example code until it does what you want.
-                    <li>Make sure examples work</li>
-                    Just because you find example code doesn't mean it will work in your system. Check the example code you're using to make sure it behaves the way you expect.
-                    <li>Check (print) intermediate results</li>
-                    When your code doesn't crash, but doesn't behave as expected, add print statements to your program to see where in the code things stop behaving correctly.
-                    <li>Keep and compare old versions</li>
-                    When you have a working version of your code, save it before you add to the code. This will give you something to go back to if you introduce too many new bugs.
+                <dl> <!-- <dl> defines a description list -->
+                    <dt>1. Examine error messages when programs crash</dt> <!-- <dt> defines the term (name) -->
+                    <dd>The last line of Python Tracebacks will tell you what went wrong. Reading backwards from there will tell you more about where the problem occurred.</dd> <!-- <dd> defines the data (description) -->
+                    <dt>2. Work from example code</dt>
+                    <dd>If your modified code doesn't work, comment it out and do step-by-step modifications to the example code until it does what you want.</dd>
+                    <dt>3. Make sure examples work</dt>
+                    <dd>Just because you find example code doesn't mean it will work in your system. Check the example code you're using to make sure it behaves the way you expect.</dd>
+                    <dt>4. Check (print) intermediate results</dt>
+                    <dd>When your code doesn't crash, but doesn't behave as expected, add print statements to your program to see where in the code things stop behaving correctly.</dd>
+                    <dt>5. Keep and compare old versions</dt>
+                    <dd>When you have a working version of your code, save it before you add to the code. This will give you something to go back to if you introduce too many new bugs.</dd>
+                </dl>
             </div>
         </div>
     </div>
@@ -190,26 +208,69 @@
                         <td>['y','a','b','b','a','!']</td>
                     </tr>
                     <tr>
-                        <td>Search Element in List</td> <!-- "td" tag create a simple column in the table. -->
-                        <td><b>p[number] = [&lt;Expression&gt;,&lt;Expression&gt;,...]</b></td>
+                        <td>Search Element in List</td> 
+                        <td><b>p[number]</b></td>
                         <td>p = ['y','a','b','b','a','!']<br>print p[0]</td>
-                        <td>'y'</td>
+                        <td>y</td>
+                    </tr>
+                    <tr>
+                        <td>Elements in List</td> 
+                        <td><b>p[number, number]</b></td>
+                        <td>p = ['y','a','b','b','a','!']<br>print p[2:4]</td>
+                        <td>['b', 'b']</td>
+                    </tr>
+                    <tr>
+                        <td>Nested Lists</td> 
+                        <td><b>p[number][number]</b></td>
+                        <td>p = [['Taiwan','Taipei'],['China','Beijing'],['United States','Washington']]<br>print p[2][1]</td>
+                        <td>Washington</td>
+                    </tr>
+                    <tr>
+                        <td>Mutation</td> 
+                        <td><b>p[number] = &lt;Expression&gt;</b></td>
+                        <td>p = ['y','a','b','b','a','!']<br>p[0] = 'M'<br>print p</td>
+                        <td>[<b>'M'</b>,'a','b','b','a','!']</td>
+                    </tr>
+                    <tr>
+                        <td>Append<br>Add new element to the end of list, not create a new list.</td> 
+                        <td><b>&lt;list&gt;.append(&lt;element&gt;)</b></td>
+                        <td>p = ['y','a','b','b','a','!']<br><b>y = p</b><br>p.append('udacity')<br>print p<br>print y</td>
+                        <td>['y','a','b','b','a','!',<b>'udacity'</b>]<br>['y','a','b','b','a','!',<b>'udacity'</b>]</td>
+                    </tr>
+                    <tr>
+                        <td>Concatenate<br>It produces a new list.</td> 
+                        <td><b>&lt;list&gt; + &lt;list&gt;</b></td>
+                        <td>p = ['2','3']<br><b>y = p</b><br>p = ['2','3'] + ['1','4']<br>print p<br>print y</td>
+                        <td>['2', '3', '1', '4']<br>['2','3']</td>
+                    </tr>
+                    <tr>
+                        <td>List Length</td> 
+                        <td><b>len(&lt;list&gt;)</b></td>
+                        <td>p = len([0,1])<br>y = len(['a',['b',['c']]],'b')<br>print p<br>print y</td>
+                        <td>2<br>3</td>
+                    </tr>
+                    <tr>
+                        <td>Index<br>if &lt;value&gt; is in the &lt;list&gt;, returns the first position where &lt;value&gt; is found in &lt;list&gt;.<br>otherwise, produce an error.</td> 
+                        <td><b>&lt;list&gt;.index(&lt;value&gt;)</b></td>
+                        <td>p = ['y','a','b','b','a','!']<br>print p.index('b')</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Find value in list or not<br>If &lt;value&gt; is in the &lt;list&gt;, output is True. otherwise, output is false.</td> 
+                        <td><b>&lt;value&gt; in &lt;list&gt;<br>&lt;value&gt; not in &lt;list&gt;</b></td>
+                        <td>p = [1,2,3]<br>print 3 <b>in</b> p<br>print 4 <b>in</b> p<br>print 5 <b>not in</b> p</td>
+                        <td>True<br>False<br>True</td>
                     </tr>
                 </table>
             </div>
         </div>
         <div class="concept"> <!-- Prepare for description of concept section style markup. -->             
-            <h3 id="lession-6-2">What is the difference between making and using a function</h3>
+            <h3 id="lession-6-2">"For" Loop</h3>
             <div class="des_concept">
-                Functions are made by starting a line of code with the keyword def and then giving a function name followed by the function parameters in parentheses. These parameters will eventually be replaced by actual values when the function is used (called).
-                To use a function, we write the name of the function followed by the value(s) we want to give it in parentheses.
-            </div>
-        </div>
-        <div class="concept"> <!-- Prepare for description of concept section style markup. -->             
-            <h3 id="lession-6-3">How do functions help programmers avoid repetition</h3>
-            <div class="des_concept">
-                Functions are tools that programmers can create and reuse forever! Once you've defined a function once, you never have to define it again.
+                for <span class="expression">&lt;name&gt;</span> in <span class="expression">&lt;list&gt;:</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="expression">&lt;&lt;block&gt;</span>
             </div>
         </div> 
     </div>
 </body>
+</html>

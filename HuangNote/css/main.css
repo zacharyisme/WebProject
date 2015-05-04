@@ -13,9 +13,9 @@ body {
     font-family: Helvetica, Times, serif; /* using "fallback" font in case certian browser don't support the chosen font.*/
 }
 
-/* This code apply to h1 with color:#FE642E. */
+/* This code apply to h1 with color:#fe642e. */
 h1 {
-	color: #FE642E;
+	color: #fe642e;
 	text-align: center;
 }
 
@@ -25,7 +25,7 @@ h2 {
 } 
 
 h3 {
-	color: #FE642E;
+	color: #fe642e;
 	font-size: 20px;
 	font-weight: bold;
 	text-align: center;
@@ -42,9 +42,22 @@ li {
 	line-height: 44px; 
 }
 
+/* Defind boder style on table */
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin-left: auto; /* "margin-left: auto" and "margin-right: auto" can put table in the center of browser */
+    margin-right: auto;
+}
+
+/* define description list style */
+dt {
+    font-weight: bold;
+}
+
 /* This code apply to class "lesson" only with color:#A34719 as background; */
 .lesson {
-    background: #A34719;
+    background: #a34719;
 	border-radius: 20px;
 	padding: 10px;
 	margin-bottom: 10px;
@@ -52,7 +65,7 @@ li {
 
 /* This code apply to the concept. */
 .concept{
-	background-color: #F5DA81;
+	background-color: #f5da81;
 	border-radius: 4px;
 	padding: 4px;
 	margin: 10px;
@@ -67,14 +80,6 @@ li {
 /* This code apply to the progress of stage. */
 .stage {
 	font-style: italic;
-}
-
-/* Defind boder style on table */
-table, th, td{
-    border: 2px solid black;
-    border-collapse: collapse;
-    margin-left: auto; /* "margin-left: auto" and "margin-right: auto" can put table in the center of browser */
-    margin-right: auto;
 }
 
 /* for span class "foo" */
