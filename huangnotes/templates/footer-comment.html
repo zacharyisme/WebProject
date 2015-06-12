@@ -1,0 +1,16 @@
+{% extends "content.html" %}
+
+{% block footer-comment %}
+
+<form action="/sign?%s" method="post">
+      <div><textarea name="content" rows="3" cols="60"></textarea></div>
+      <div><input type="submit" value="Sign Comment"></div>
+    </form>
+    <hr>
+    <form>StageComment name:
+      <input value="%s" name="stagecomment_name">
+      <input type="submit" value="switch">
+    </form>
+    <a href="%s">%s</a>
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "content.html" %}
+
+{% block form %}
+
+<form>
+    <h2 style="color:black">Submit your Comment</h2>
+    <textarea name="content" cols="59" rows="5"></textarea>
+    <br>
+    <input type="submit">
+    {% if items %}
+        {% for item in items %}
+            <input type="hidden" name="content" value="{{item}}">
+        {% endfor %}
+    {% endif %}
+
+    {% if items %}
+        <br>
+        <br>
+        <h2>Comment List</h2>
+        <ul style="list-style-type:disc">
+            {% for item in items %}
+                <li>{{item}}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+</form>
+
+{% endblock%}
